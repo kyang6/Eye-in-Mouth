@@ -4,231 +4,47 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Kevin Yang - About Me" >
-	<meta name="keywords" content="Stanford, AI, Kevin Yang">
+	<meta name="description" content="Word Arithmetic, add some words!" >
+	<meta name="keywords" content="word arithmetic, artificial intelligence, NLP">
 		
 	<link rel="shortcut icon" href="img/favicon.ico">
 
-	<title>Kevin Yang</title>
+	<title>Word Arithmetic</title>
 	<link rel="stylesheet" type="text/css" href="css/bulma.lux.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 </head>
 
 <body>
 	<!-- Button in the Top Right -->
-	<a class="button is-transparent is-white is-fixed is-medium is-wider white-text" id="header" href="#contact">
-		Contact
+	<a class="button is-transparent is-white is-fixed is-medium is-wider" id="header" href="#about">
+		About
 	</a>
 	
 	<!-- Landing Hero -->
 	<section class="hero is-fullheight" id="hero">
-		<!-- Neural Network Visualization -->
-		<canvas id="c"></canvas>
 		<div id="home" class="hero-body has-text-centered">
 			<div class="container">
-				<div class="columns">
-					<div class="column">
-						<h1 class="title is-1 margin-top white-text">
-							Kevin Yang
-						</h1>
-					</div>
+				<div class="columns" id="center-columns">
+	  				<div class="column is-half is-offset-one-quarter">
+
+		  				<div class="field">
+							<h1 class="title is-1">Word Arithmetic</h1>
+							<div class="control is-large has-icons-right" id="search-box">
+								<input class="input is-large" type="text" placeholder="paris-france+germany" required pattern="[a-zA-Z+-]" onkeyup="lettersOnly(this)">
+							<span class="icon is-small is-right" id="icon">
+      							<img src="img/approx.svg">
+    						</span>
+							</div>
+						</div>	
+	  				</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Experience -->
-	<section id="Experience" class="section is-small">
-		<div class="container vertical-margins">
-			<div class="columns">
-				<div class="column content-is-centered">
-					<div>
-						<h3 class="title is-1">Experience</h3>
-						
-					</div>
-				</div>
-				<div class="column">
-					<h4 class="subtitle is-1">404</h4>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<!-- Photography -->
-	<section id="photography" class="section is-small grey-background">
-		<div class="container vertical-margins has-text-centered">
-			<h3 class="title is-1">Photography</h3>
-			<br>
-			<br>
-			<div class="tile is-ancestor">
-  
-				<div class="tile is-vertical is-8">
-					<div class="tile">
-						<div class="tile is-parent is-vertical">
-							<figure class="image tile is-child">
-								<img src="img/claw.jpg" alt="Stanford claw fountain at night">
-							</figure>
-
-						</div>
-					<div class="tile is-parent is-vertical">
-						<figure class="image tile is-child">
-							<img src="img/hoover.jpg" alt="Stanford fountain in front of Hoover tower">
-						</figure>
-					</div>
-					</div>
-					<div class="tile is-parent">
-						<figure class="image tile is-child">
-							<img src="img/snowball.jpg" alt="Small white pomeranian on a red brick road">
-						</figure>
-					</div>
-				</div>
-				<div class="tile is-parent is-vertical">
-					<figure class="image tile is-child">
-						<img src="img/library.jpg" alt="Red Stanford fountain at night">
-					</figure>
-					<figure class="image tile is-child">
-						<img src="img/shanghai.jpg" alt="Night photo of Shanghai">
-					</figure>
-				</div>
-			</div>
-			<div class="is-vertical">
-				<figure class="image tile is-child">
-					<img src="img/mongolia.jpg" alt="Mongolian huts during the day">
-				</figure>
-			</div>
-		</div>
-	</section>
-
-	<!-- Accessibility -->
-	<section id="accessibility" class="section is-small has-text-centered">
-		<h3 class="title is-1">Accessibility</h3>
-		<p class="content">Below is some of my work on accessibility. You can view more at my website <a href="librarylyna.com">LibraryLyna</a>.</p>
-
-		<hr class="centered-hr">
-
-		<section id="fbalttext" class="is-centered margin-top">
-			<div class="container has-text-centered">
-				<h1 class="title is-2">Facebook's Automatic Alt Text </h1>
-				<p>
-					Facebook's Automatic Alt Text: Using Artificial Intelligence, Facebook's Automatic Alt Text generates general descriptions of images for the blind and vision-loss community. Test it for yourself below. 
-				</p>
-				<div class="columns margin-top">
-					<div class="column">
-						<img src='img/dog.jpg'></img>
-						<pre class="margin-top-zeroed"><span class="text-is-green">alt</span>=<span class="text-is-blue">""</span></pre>
-						<p class="subtitle margin-top-small">This image has no alt text</p>
-					</div>
-
-					<div class="column">
-						<img src='img/dog.jpg'" alt="Image may contain: dog, plant and outdoor"></img>
-						<pre class="margin-top-zeroed"><span class="text-is-green">alt</span>=<span class="text-is-blue">"Image may contain: dog, plant and outdoor"</span></pre>
-						<p class="subtitle margin-top-small">Alt text generated with Facebook's Automatic Alt Text</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<br>
-		<br>
-		<hr class="centered-hr">
-
-		<section id="llautoimagemaps" class="is-centered margin-top">
-			<div class="container has-text-centered">
-				<h1 class="title is-2">LibraryLyna's Automatic Image Labels</h1>
-				<p>
-					LibraryLyna's Automatic Image Labels: Imagine gliding your finger across an image and voiceover reading out objects as your finger passes them. LibraryLyna's Automatic Image Labels uses Artificial Intelligence to provide the blind and vision loss community an interactive experience with images. Test it for yourself below.
-				</p>
-				<div class="columns margin-top">
-					<div class="column">
-						<img src='img/dog.jpg'></img>
-						<pre class="margin-top-zeroed"><span class="text-is-green">alt</span>=<span class="text-is-blue">""</span></pre>
-						<p class="subtitle margin-top-small">This image has no alt text</p>
-					</div>
-					<div class="column">
-						<img src='img/labeled_dog.jpg'" usemap="#labeled_dog" alt="Image may contain: dog, tree, and outdoor"></img>
-						<pre class="margin-top-zeroed"><span class="text-is-green">alt</span>=<span class="text-is-blue">"Image may include: dog, tree, and outdoor"</span></pre>
-						<p class="subtitle margin-top-small">Alt text and interactive image labels generated with LibraryLyna's Automatic Image Labels</p>
-						<map name="labeled_dog">
-							<area shape="rect" href="#dog"  onclick="return false;" coords="625, 420, 965, 923" alt="dog">
-						</map>
-					</div>
-				</div>
-			</div>
-		</section>
-	</section>
-
-
-	<!-- Contact Form -->
-	<section id="contact" class="section grey-background">
-		<h1 class="title is-1 margin-top has-text-centered">
-			Contact
-		</h1>
-		<div class="columns">
-			<div class="column">
-				<figure class="image is-square" >
-					<img src="img/kevin.jpg" alt="kevin yang smiling with a black hat on" id="contact-image">
-				</figure>
-			</div>
-
-			<div class="column">
-				<div class="mobile-breaks"><br><br></div>
-				<h3 class="subtitle">E: <a href="mailto:kyang6@stanford">kyang6@stanford.edu</a></h3>
-				<h3 class="subtitle">L: <a href="https://www.linkedin.com/in/kev-yang/">@kev-yang</a></h3>
-				<form name="contact" action="#" netlify>
-					<label class="subtitle caps">Name</label>
-					<p class="control">
-						<input class="input" type="text" placeholder="Text input" name="name" required>
-					</p>
-					<br>
-
-					<label class="subtitle caps">Contact info</label>
-					<p class="control">
-						<input class="input" type="text" placeholder="Contact input" name="contact" required>
-					</p>
-					<br>
-
-					<label class="subtitle caps">Message</label>
-					<p class="control">
-						<textarea class="textarea" placeholder="I would like to learn more..." name="message"></textarea>
-					</p>
-					<br>
-					<button class="button is-primary caps">Submit</button>
-				</form>
-			</div>
-		</div>
-	</section>
-
-	<!-- Footer  -->
-	<footer class="footer small-bottom-padding">
-		<div class="content has-text-centered">
-			<p>
-				© 2017 <strong>Kevin Yang</strong> - All rights reserved
-			</p>
-		</div>
-	</footer>
-
-	<div class="modal" id="thank-you-modal">
-		<div class="modal-background" id="thank-you-modal-bkgrd"></div>
-		<div class="modal-content">
-			<div class="box has-text-centered">
-				<h1 class="title is-1 margin-top">
-					Kevin Yang
-				</h1>
-				<hr class="centered-hr">
-				<br>
-				<p class="subtitle margin-top">
-					Thank you for getting into contact with me. I'll try to respond as soon as possible!
-				</p>
-			</div>
-		</div>
-		<button class="modal-close" id="thank-you-modal-close"></button>
-	</div>
-
-
-	<script type="text/javascript" src="js/neural_network.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/responsive_image_maps.js"></script>
 
 </body>
 </html>

@@ -138,3 +138,15 @@ canvas {
 .text-is-dark {
   color: #363636;
 }
+
+#center-columns {
+  margin-bottom: 5rem;
+}
+
+#search-box {
+  margin-top: 1.4rem;
+}
+
+#icon {
+  background-color: rgba(198, 224, 232, 0.64);
+}
