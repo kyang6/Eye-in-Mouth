@@ -1,0 +1,140 @@
+/* Mobile, removes ability to scroll horizontally */
+body {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Mobile, small screen responsive */
+@media screen and (max-width: 780px){
+    #brands { display: none; }
+    .vertical-breaks { display: none; }
+    .mobile-breaks { display:none; }
+}
+
+/* Center divs for index */
+.content-is-centered {
+  display: flex;
+  align-items: center
+}
+
+/* Vertical pad for three icons */
+.vertical-padding {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+/* Fix the Navbar at the top of the screen */
+.is-fixed{ 
+  position: fixed !important; 
+  top: 0; 
+  right: 0; 
+  z-index: 100;
+}
+
+/* Button in top right, wider */
+.is-wider {
+	width: 13rem;
+}
+
+/* reduces height */
+.small-height {
+	min-height: 3rem;
+}
+
+.margin-right {
+	margin-right: 3rem;
+}
+
+/* Change color of text */
+.white-text {
+	color: white !important;
+}
+
+/* Button in top right, transparent */
+.is-transparent {
+	background-color: transparent !important;
+}
+
+/* Footer smaller padding */
+.small-bottom-padding {
+	padding-bottom: 1rem !important;
+}
+
+/* brand images grey */
+.grey-scale {
+	filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/* Disable grayscale on hover */
+.grey-scale:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+/* Create horizontal lines */
+.centered-hr {
+  text-align:center; 
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+/* Border on bottom */
+.bottom-border {
+  border-bottom-width: 1px;
+  border-bottom-color: #c8cdd0;
+  border-bottom-style: solid;
+}
+
+/* Margins for the 3 Sections */
+.vertical-margins {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/* Override Lux content strong styles */
+.subtitle strong, .title strong {
+  font-weight: 700;
+}
+
+/* Background color for sections */
+.grey-background {
+  background-color: #f5f5f5;
+}
+
+/* Place Neural Network in Hero */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#contact-image { 
+  transform: scale(.87);
+}
+
+
+/* Adds a margin to the top of an element */
+.margin-top {
+  margin-top: 2rem;
+}
+
+/* Move the alt text label on images up */
+.margin-top-zeroed {
+  margin-top: -0.4rem;
+}
+.margin-top-small {
+  margin-top: 1rem;
+}
+/* Change color of text */
+.text-is-blue {
+  color: #3273dc;
+}
+.text-is-green {
+  color: #00d1b2;
+}
+.text-is-dark {
+  color: #363636;
+}
