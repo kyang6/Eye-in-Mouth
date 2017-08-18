@@ -1,1 +1,0 @@
-# kyang.co
