@@ -13,33 +13,17 @@
 	<link rel="stylesheet" type="text/css" href="css/bulma.lux.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-104892128-1', 'auto');
-	  ga('send', 'pageview');
-	</script>
 </head>
 
 <body>
-	<!-- Button in the Top Right -->
-	<a class="button is-transparent is-white is-fixed is-medium is-wider white-text" id="header" href="#contact">
-		Contact
-	</a>
-	
 	<!-- Landing Hero -->
 	<section class="hero is-fullheight" id="hero">
-		<!-- Neural Network Visualization -->
-		<canvas id="c"></canvas>
 		<div id="home" class="hero-body has-text-centered">
 			<div class="container">
 				<div class="columns">
 					<div class="column">
 						<h1 class="title is-1 margin-top white-text">
-							Kevin Yang
+							Eye in Mouth
 						</h1>
 					</div>
 				</div>
@@ -47,124 +31,91 @@
 		</div>
 	</section>
 
+	<!-- links to your files of various kinds
+instructions on building the project (for example, anyone in the class should be able to download)
+a few screenshots that capture great parts of your visualizer in action
+a short text section that:
+conveys your ideas/comments in constructing each program
+describes any difficulties you encountered in the process
+lists any collaborators -->
+
 	<!-- Experience -->
 	<section id="Experience" class="section is-small">
 		<div class="container vertical-margins">
 			<div class="columns">
 				<div class="column content-is-centered">
 					<div>
-						<h3 class="title is-1">Experience</h3>
-						
+						<h3 class="title is-1">Experience | Audio Visualizer</h3>
 					</div>
 				</div>
-				<div class="column">
-					<h4 class="subtitle is-1">404</h4>
-				</div>
 			</div>
+			<div class="content">
+					<p>
+						Is music just sounds? Can music be visual? What is the interplay between vision and sound; specifically, what is the interplay between the human organ that makes sounds and the organ that lets us observe the world. Experience the Eye in Mouth Music Visualizer!
+					</p>
+				</div>
 		</div>
 	</section>
 	
 	<!-- Photography -->
 	<section id="photography" class="section is-small grey-background">
-		<div class="container vertical-margins has-text-centered">
-			<h3 class="title is-1">Photography</h3>
+		<div class="container vertical-margins">
+			<h3 class="title is-1">Instructions</h3>
+			<br>
+			<br>
+			<div class="content">
+				<h3 class="subtitle is-2"> How to build</h3>
+				<ul>
+					<li>Download Zip file of all the files required <a href="">here</a>.</li>
+					<li>Unzip, open terminal on Mac and go into the folder musicineye</li>
+					<li>Run the command "make osx" on a Mac</li>
+					<li>After build is complete run the command "./VisualSine" to run the visualizer</li>
+					<li>Follow prompts to use the visualizer</li>
+				</ul>
+			</div>
+			<br>
 			<br>
 			<br>
 			<div class="tile is-ancestor">
-  
 				<div class="tile is-vertical is-8">
-					<div class="tile">
-						<div class="tile is-parent is-vertical">
-							<figure class="image tile is-child">
-								<img src="img/claw.jpg" alt="Stanford claw fountain at night">
-							</figure>
-
-						</div>
-					<div class="tile is-parent is-vertical">
-						<figure class="image tile is-child">
-							<img src="img/hoover.jpg" alt="Stanford fountain in front of Hoover tower">
-						</figure>
-					</div>
-					</div>
 					<div class="tile is-parent">
 						<figure class="image tile is-child">
-							<img src="img/snowball.jpg" alt="Small white pomeranian on a red brick road">
+							<img src="img/loud.png">
 						</figure>
 					</div>
 				</div>
 				<div class="tile is-parent is-vertical">
 					<figure class="image tile is-child">
-						<img src="img/library.jpg" alt="Red Stanford fountain at night">
-					</figure>
-					<figure class="image tile is-child">
-						<img src="img/shanghai.jpg" alt="Night photo of Shanghai">
+						<img src="img/eye.png" >
 					</figure>
 				</div>
 			</div>
 			<div class="is-vertical">
 				<figure class="image tile is-child">
-					<img src="img/mongolia.jpg" alt="Mongolian huts during the day">
+					<img src="img/wide.png">
 				</figure>
 			</div>
 		</div>
 	</section>
 
-	<!-- Accessibility -->
-	<section id="accessibility" class="section is-small has-text-centered">
-		<h3 class="title is-1">Accessibility</h3>
-		<p class="content">Below is some of my work on accessibility. You can view more at my website <a href="librarylyna.com">LibraryLyna</a>.</p>
-
-		<hr class="centered-hr">
-
-		<section id="fbalttext" class="is-centered margin-top">
-			<div class="container has-text-centered">
-				<h1 class="title is-2">Facebook's Automatic Alt Text </h1>
+<!-- conveys your ideas/comments in constructing each program
+describes any difficulties you encountered in the process
+lists any collaborators -->
+	<section id="assignment">
+		<div class="container vertical-margins">
+			<div class="content has-text-centered">
+				<h3 class="subtitle">Assignment Notes</h3>
 				<p>
-					Facebook's Automatic Alt Text: Using Artificial Intelligence, Facebook's Automatic Alt Text generates general descriptions of images for the blind and vision-loss community. Test it for yourself below. 
+				Part 1 was easy, not much time was spent there. Getting the RFFT to work was 
+				the most challenging part of this project as I did not know what RFFT was before. 
+				It took a while understanding how windows worked and conceptualizing the conversion
+				of time series data to frequency series data. However, sndpeek was really helpful 
+				in this part of the project. The rest of the project went smoothly but slowly. I wish 
+				I had more experience with OpenGL, I wouldn't have loved to implement some more visuals 
+				that were out of reach for this assignment. 
 				</p>
-				<div class="columns margin-top">
-					<div class="column">
-						<img src='img/dog.jpg'></img>
-						<pre class="margin-top-zeroed"><span class="text-is-green">alt</span>=<span class="text-is-blue">""</span></pre>
-						<p class="subtitle margin-top-small">This image has no alt text</p>
-					</div>
-
-					<div class="column">
-						<img src='img/dog.jpg'" alt="Image may contain: dog, plant and outdoor"></img>
-						<pre class="margin-top-zeroed"><span class="text-is-green">alt</span>=<span class="text-is-blue">"Image may contain: dog, plant and outdoor"</span></pre>
-						<p class="subtitle margin-top-small">Alt text generated with Facebook's Automatic Alt Text</p>
-					</div>
-				</div>
 			</div>
-		</section>
-
-		<br>
-		<br>
-		<hr class="centered-hr">
-
-		<section id="llautoimagemaps" class="is-centered margin-top">
-			<div class="container has-text-centered">
-				<h1 class="title is-2">LibraryLyna's Automatic Image Labels</h1>
-				<p>
-					LibraryLyna's Automatic Image Labels: Imagine gliding your finger across an image and voiceover reading out objects as your finger passes them. LibraryLyna's Automatic Image Labels uses Artificial Intelligence to provide the blind and vision loss community an interactive experience with images. Test it for yourself below.
-				</p>
-				<div class="columns margin-top">
-					<div class="column">
-						<img src='img/dog.jpg'></img>
-						<pre class="margin-top-zeroed"><span class="text-is-green">alt</span>=<span class="text-is-blue">""</span></pre>
-						<p class="subtitle margin-top-small">This image has no alt text</p>
-					</div>
-					<div class="column">
-						<img src='img/labeled_dog.jpg'" usemap="#labeled_dog" alt="Image may contain: dog, tree, and outdoor"></img>
-						<pre class="margin-top-zeroed"><span class="text-is-green">alt</span>=<span class="text-is-blue">"Image may include: dog, tree, and outdoor"</span></pre>
-						<p class="subtitle margin-top-small">Alt text and interactive image labels generated with LibraryLyna's Automatic Image Labels</p>
-						<map name="labeled_dog">
-							<area shape="rect" href="#dog"  onclick="return false;" coords="625, 420, 965, 923" alt="dog">
-						</map>
-					</div>
-				</div>
-			</div>
-		</section>
+		</div>
 	</section>
 
 

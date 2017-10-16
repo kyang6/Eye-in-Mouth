@@ -111,6 +111,11 @@ canvas {
   left: 0;
 }
 
+#hero {
+  background-image: url("../img/eyeinmouth.gif");
+   background-position: center; 
+}
+
 #contact-image { 
   transform: scale(.87);
 }
